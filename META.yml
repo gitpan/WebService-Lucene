@@ -1,0 +1,43 @@
+---
+name: WebService-Lucene
+version: 0.03
+author:
+  - 'Brian Cassidy <brian.cassidy@nald.ca>'
+abstract: Module to interface with the Lucene indexing webservice
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  Class::Accessor: 0
+  Data::Page: 0
+  Encode: 0
+  Exception::Class: 0
+  Scalar::Util: 0
+  URI: 0
+  WWW::OpenSearch: 0.11
+  XML::Atom: 0.25
+  XML::LibXML: 0
+provides:
+  WebService::Lucene:
+    file: lib/WebService/Lucene.pm
+    version: 0.03
+  WebService::Lucene::Client:
+    file: lib/WebService/Lucene/Client.pm
+  WebService::Lucene::Document:
+    file: lib/WebService/Lucene/Document.pm
+  WebService::Lucene::Exception:
+    file: lib/WebService/Lucene/Exception.pm
+  WebService::Lucene::Field:
+    file: lib/WebService/Lucene/Field.pm
+  WebService::Lucene::Index:
+    file: lib/WebService/Lucene/Index.pm
+  WebService::Lucene::Iterator:
+    file: lib/WebService/Lucene/Iterator.pm
+  WebService::Lucene::Results:
+    file: lib/WebService/Lucene/Results.pm
+  WebService::Lucene::XOXOParser:
+    file: lib/WebService/Lucene/XOXOParser.pm
+generated_by: Module::Build version 0.2807
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
