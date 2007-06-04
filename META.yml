@@ -1,6 +1,6 @@
 ---
 name: WebService-Lucene
-version: 0.03
+version: 0.04
 author:
   - 'Brian Cassidy <brian.cassidy@nald.ca>'
 abstract: Module to interface with the Lucene indexing webservice
@@ -20,7 +20,7 @@ requires:
 provides:
   WebService::Lucene:
     file: lib/WebService/Lucene.pm
-    version: 0.03
+    version: 0.04
   WebService::Lucene::Client:
     file: lib/WebService/Lucene/Client.pm
   WebService::Lucene::Document:
@@ -37,7 +37,7 @@ provides:
     file: lib/WebService/Lucene/Results.pm
   WebService::Lucene::XOXOParser:
     file: lib/WebService/Lucene/XOXOParser.pm
-generated_by: Module::Build version 0.2807
+generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
