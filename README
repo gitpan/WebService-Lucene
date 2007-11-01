@@ -108,8 +108,9 @@ SEE ALSO
     * http://lucene-ws.net/
 
 AUTHORS
-    * Brian Cassidy <brian.cassidy@nald.ca>
-    * Adam Paynter <adam.paynter@nald.ca>
+    Brian Cassidy <bricas@cpan.org>
+
+    Adam Paynter <adapay@cpan.org>
 
 COPYRIGHT AND LICENSE
     Copyright 2006 National Adult Literacy Database
