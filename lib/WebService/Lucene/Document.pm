@@ -86,7 +86,7 @@ sub new_from_entry {
     }
 
     $self->relevance(
-        $entry->get( 'http://a9.com/-/spec/opensearch/1.1/', 'relevance' ) );
+        $entry->get( 'http://a9.com/-/opensearch/extensions/relevance/1.0/', 'score' ) );
     $self->title( $entry->title );
     my $content = $entry->content->body;
 
@@ -318,7 +318,7 @@ sub _field_accessor {
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2006 National Adult Literacy Database
+Copyright 2008 National Adult Literacy Database
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 
