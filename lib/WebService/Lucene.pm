@@ -12,7 +12,7 @@ use WebService::Lucene::XOXOParser;
 use XML::LibXML;
 use Scalar::Util ();
 
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 __PACKAGE__->mk_accessors(
     qw(
@@ -222,7 +222,8 @@ sub _parse_service_document {
     my ( $workspace )
         = $doc->documentElement->getChildrenByTagName( 'workspace' );
 
-    $self->title_info( $workspace->getAttributeNode( 'title' )->value );
+    my( $title ) = $workspace->getElementsByLocalName( 'title' );
+    $self->title_info( $title->textContent );
 
     for my $collection ( $workspace->getChildrenByTagName( 'collection' ) ) {
         my $url = $collection->getAttributeNode( 'href' )->value;
