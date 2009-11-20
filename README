@@ -103,9 +103,11 @@ METHODS
         my $results = $ws->facets( [ 'index1', 'index2' ] );
 
 SEE ALSO
-    * XML::Atom::Client
-    * WWW::OpenSearch
-    * http://lucene-ws.net/
+    *   XML::Atom::Client
+
+    *   WWW::OpenSearch
+
+    *   http://lucene-ws.net/
 
 AUTHORS
     Brian Cassidy <bricas@cpan.org>
@@ -113,7 +115,7 @@ AUTHORS
     Adam Paynter <adapay@cpan.org>
 
 COPYRIGHT AND LICENSE
-    Copyright 2008 National Adult Literacy Database
+    Copyright 2006-2009 National Adult Literacy Database
 
     This library is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
